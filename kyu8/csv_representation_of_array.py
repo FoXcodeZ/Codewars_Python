@@ -2,10 +2,10 @@ def to_csv_text(t_array):
     out_string = str()
     for column in t_array:
         for item in column:
-            out_string += str(item) + ","  # Add the number as a string and a comma after the number.
-        out_string = out_string[:-1:]  # Delete the last, additional comma in the line.
-        out_string += "\n"  # Add enter at the end of the line.
-    out_string = out_string[:-1:]  # Delete the last additional enter in the string.
+            out_string += str(item) + ","   # Add the number as a string and a comma after the number.
+        out_string = out_string[:-1:]       # Delete the last, additional comma in the line.
+        out_string += "\n"                  # Add enter at the end of the line.
+    out_string = out_string[:-1:]           # Delete the last additional enter sign in the string.
     return out_string
 
 
