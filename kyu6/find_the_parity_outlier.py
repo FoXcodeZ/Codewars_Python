@@ -1,9 +1,7 @@
 def find_outlier(integers):
     odd_list = [number for number in integers if number % 2 == 0]
     even_list = [number for number in integers if number % 2 != 0]
-    if len(even_list) > len(odd_list):
-        return odd_list[0]
-    return even_list[0]
+    return odd_list[0] if len(even_list) > len(odd_list) else even_list[0]
 
 
 if __name__ == '__main__':
